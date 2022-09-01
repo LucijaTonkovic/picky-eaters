@@ -321,11 +321,11 @@ nav ul a:hover{
 }
 
 .swiper .swiper-button-next{
-    margin-right: 3rem;
+    margin-right: 5%;
 }
 
 .swiper .swiper-button-prev{
-    margin-left: 3rem;
+    margin-left: 5%;
 }
 
 #slider_section{
@@ -454,8 +454,8 @@ iframe{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 10%;
+    padding-right: 10%;
     overflow: hidden;
     padding-bottom: 2rem;
 }
@@ -463,9 +463,11 @@ iframe{
 #reviews > h2{
     display: inline-block;
     margin-left: auto;
+    width: 100%;
+    text-align: center;
     margin-right: auto;
     font-size: 2.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
     font-weight: bold;
     color: var(--turquoise);
 }
@@ -639,7 +641,11 @@ footer a:hover{
 
 #menu_container{
     box-sizing: border-box;
-    width: 100%;
+    display: flex;
+    margin-left: 13.5rem;
+    justify-content: center;
+    margin-right: 0;
+    overflow: hidden;
 }
 
 #top_menu_title{
@@ -649,7 +655,8 @@ footer a:hover{
 #grid_container{
     display: grid;
     row-gap: 5rem;
-    max-width: 98rem;
+    width: 98%;
+    max-width: 100rem;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     justify-items: center;
@@ -660,7 +667,8 @@ footer a:hover{
     padding-top: 1.8rem;
     padding-bottom: 4rem;
     border-radius: .5rem;
-    margin-left: 13.5rem;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
 }
 
 .menu_titles{
