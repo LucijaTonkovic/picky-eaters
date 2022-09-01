@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picky Eaters - Menu</title>
+    <meta name="description" content="Food Ordering Application">
+    <meta name="keywords" content="Food, Order, Picky, Customizable, About, Delivery, Menu">
+    <meta name="author" content="Lucija Tonkovikj">
+
+    <link rel="stylesheet" href="Styles/Main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com\e2c403c841.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="placeholder" id="menu_placeholder"></div>
+    <div class="items_in_cart_indicator"></div>
+    <span class="logo_background" id="menu_logo_background"><img
+            src="Images/Final_logo.png" alt="Panda Logo" class="logo" id="menu_logo"></span>
+    <nav class="navMenu" id="menu_mainNav">
+        <span>Logo</span>
+        <span>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </span>
+        <span class="cart_icon"><i class="fa-solid fa-cart-shopping"></i></span>
+    </nav>
+
+    <nav id="sideNav">
+        <div id="menu_choice_container">
+            <h2>
+                Menu Sections:
+            </h2>
+            <div>
+                <a class="menu_choice" href="#Main_Menu_Title">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    <i class="fa-solid"></i>Pizza
+                </a>
+            </div>
+
+            <div>
+                <a class="menu_choice" href="#Burger">
+                    <i class="fa-solid fa-burger"></i>
+                    <i class="fa-solid"></i>Burgers
+                </a>
+            </div>
+
+            <div>
+                <a class="menu_choice" href="#Salad">
+                    <i class="fa-solid fa-plate-wheat"></i>
+                    <i class="fa-solid"></i>Salads
+                </a>
+            </div>
+
+            <div>
+                <a class="menu_choice" href="#Seafood">
+                    <i class="fa-solid fa-shrimp"></i>
+                    <i class="fa-solid"></i>Seafood
+                </a>
+            </div>
+
+            <div>
+                <a class="menu_choice" href="#Dessert">
+                    <i class="fa-solid fa-ice-cream"></i>
+                    <i class="fa-solid"></i>Desserts
+                </a>
+            </div>
+
+            <div>
+                <a class="menu_choice" href="#garnishes">
+                    <i class="fa-solid fa-carrot"></i>
+                    <i class="fa-solid"></i>Garnishes
+                </a>
+            </div>
+
+            <div>
+                <a class="menu_choice" href="#drinks">
+                    <i class="fa-solid fa-wine-glass"></i>
+                    <i class="fa-solid"></i>Drinks
+                </a>
+            </div>
+
+            <div>
+                <a class="menu_choice" href="#" id="customize_button"><i class="fa-solid fa-kitchen-set"></i>
+                    <i class="fa-solid"></i>Customize
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div id="menu_container">
+
+            <div id="grid_container" data-aos="fade">
+                <div  id="top_menu_title">
+                    <h1 id="Main_Menu_Title">OUR MENU</h1>
+                    <h2>
+                        A wide collection of tried and true delicacies
+                    </h2>
+                    <hr>
+                </div>
+
+                <h1 class="menu_titles" id="Pizza" data-aos="fade">Pizza</h1>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Capricciosa.jpg" alt="Picture of Capricciosa">
+                    <h2 class="menu_item_name">Capricciosa</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tomato sauce, cheese, ham, mushrooms.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">10</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Margherita.jpg" alt="Picture of Margherita">
+                    <h2 class="menu_item_name">Margherita</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tomato sauce, cheese, fresh basil.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">8</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Tuna_Pizza.jpg" alt="Picture of Pizza al Tonno">
+                    <h2 class="menu_item_name">Pizza al Tonno</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tomato sauce, cheese, tuna, onions, olives.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">10</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Quattro_Formaggi.jpg" alt="Picture of Quattro Formaggi pizza">
+                    <h2 class="menu_item_name">Quattro Formaggi</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tomato sauce, mozzarella, gorgonzola, parmigiano,
+                        goat cheese.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">13</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Pepperoni.png" alt="Picture of Pepperoni pizza">
+                    <h2 class="menu_item_name">Pepperoni</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tomato sauce, cheese, pepperoni.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">12</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Veggie_Pizza.jpg" alt="Picture of Veggie pizza">
+                    <h2 class="menu_item_name">Veggie Pizza</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tomato sauce, cheese, olives, mushrooms, peppers,
+                        tomatoes.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">9</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Hawaiian_pizza.jpg" alt="Picture of Hawaiian pizza">
+                    <h2 class="menu_item_name">Hawaiian Pizza</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tomato sauce, cheese, ham, bacon, pineapple.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">10</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Meat_pizza.jpg" alt="Picture of Meat Pizza">
+                    <h2 class="menu_item_name">Meat Pizza</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tomato sauce, cheese, sausage, bacon, pepperoni, ham.
+                    </p>
+                    <div id="Burger" class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">12</span>&euro;</div>
+                    </div>
+                </div>
+
+                <h1 class="menu_titles" data-aos="fade">Burgers</h1>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Classic_burger.jpg" alt="Picture of Burger">
+                    <h2 class="menu_item_name">Classic Burger</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Beef, lettuce, tomatoes, onions, fries, burger sauce.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">12</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Cheese_burger.jpg" alt="Picture of Cheeseburger">
+                    <h2 class="menu_item_name">Cheeseburger</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Beef, cheese, lettuce, tomatoes, onions, fries, burger sauce.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">14</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Crispy_burger.jpg" alt="Picture of Crispy Burger">
+                    <h2 class="menu_item_name">Crispy Burger</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Fried chicken, cheese, lettuce, tomatoes, onions, fries, burger sauce.
+                    </p>
+                    <div id="Salad" class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">14</span>&euro;</div>
+                    </div>
+                </div>
+
+                <h1 class="menu_titles" data-aos="fade">Salads</h1>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Caesar_Salad.jpeg" alt="Picture of Caesar Salad">
+                    <h2 class="menu_item_name">Caesar Salad</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Romaine lettuce, croutons, dressing, chicken, parmesan, lemon, tomatoes.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">9</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Salad_Caprese.jpeg" alt="Picture of Caprese Salad">
+                    <h2 class="menu_item_name">Caprese Salad</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Mozzarella, tomatoes, sweet basil, olive oil, salt.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">6</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Taratur.png" alt="Picture of Taratur">
+                    <h2 class="menu_item_name">Taratur</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Greek yogurt, cucumbers, garlic.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">6</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Shopska.jpg" alt="Picture of Salad Shopska">
+                    <h2 class="menu_item_name">Salad "Shopska"</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tomatoes, cucumbers, onions,salt, oregano, white cheese,
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">7</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Tuna_Salad.jpeg" alt="Picture of Tuna Salas">
+                    <h2 class="menu_item_name">Tuna Salad</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tuna, lettuce, tomatoes, onions.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">7</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Cobb_Salad.jpeg" alt="Picture of Cobb Salad">
+                    <h2 class="menu_item_name">Cobb Salad</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Tomatoes, bacon, chicken, boiled eggs,
+                        avocado, lettuce...
+                    </p>
+                    <div id="Seafood" class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">10</span>&euro;</div>
+                    </div>
+                </div>
+
+                <h1 class="menu_titles" data-aos="fade">Seafood</h1>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Baked_Salmon.jpg" alt="Picture of Baked Salmon">
+                    <h2 class="menu_item_name">Baked Salmon</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Baked potatoes, baked salmon, basil, lemon, asparagus.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">14</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Seafood_Risotto.jpeg" alt="Picture of Risotto with seafood">
+                    <h2 class="menu_item_name">Seafood Risotto</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Rice, shrimps, clamps, squid, octopus, parsley, lemon.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">13</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Clams.jpg" alt="Picture of Clams">
+                    <h2 class="menu_item_name">Mousels</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Steamed clams, lemons, parsley, salt.
+                    </p>
+                    <div id="Dessert" class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">9</span>&euro;</div>
+                    </div>
+                </div>
+
+                <h1 class="menu_titles" data-aos="fade">Desserts</h1>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Cheesecake.jpg" alt="Picture of Cheesecake">
+                    <h2 class="menu_item_name">Cheesecake</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Fresh cheese, eggs, sugar, flour, fruit.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">6</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Lava_cake.jpg" alt="Picture of Lava Cake">
+                    <h2 class="menu_item_name">Lava Cake</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Bittersweet chocolate, eggs, flour, vanilla ice-cream, fruit.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">6</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Cherry_cake.jpeg" alt="Picture of Cherry cake">
+                    <h2 class="menu_item_name">Cherry Cake</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Fresh cherries, almond extract, flour, baking powder, eggs, chocolate.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">8</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Pannacotta.jpg" alt="Picture of Panna Cotta">
+                    <h2 class="menu_item_name">Panna Cotta</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Cream, gelatin, milk, vanilla, gelatin powder, fruit.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">7</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Apple_pie.jpg" alt="Picture of Apple Pie">
+                    <h2 class="menu_item_name">Apple Pie</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Green apples, butter, flour, cinnamon, eggs, lemon, sugar.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div>
+                            <span class="dark_text">Price:</span> <span class="price">8</span>&euro;
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Brownies.jpg" alt="Picture of Brownies">
+                    <h2 class="menu_item_name">Brownies</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Ingredients:</span> Chocolate, butter, eggs, flour, cocoa powder, vanilla, salt, sugar.
+                    </p>
+                    <div id="garnishes" class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">6</span>&euro;</div>
+                    </div>
+                </div>
+
+                <h1 class="menu_titles" data-aos="fade">Garnishes</h1>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Fries.jpg" alt="Picture of Fries">
+                    <h2 class="menu_item_name">Fries</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Addition:</span> Ketchup, mayonnaise and ranch sauce.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">4</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Sweet_potatoes.jpg" alt="Picture of Sweet Potatoes">
+                    <h2 class="menu_item_name">Sweet Potatoes</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Description:</span> Baked sweet potatoes glazed with honey.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">4</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Steamed_veggies.jpg" alt="Picture of Steamed vegetables">
+                    <h2 class="menu_item_name">Steamed Veggies</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Description:</span> Seasoned, freshly steamed broccoli, carrots and
+                        cauliflower.
+                    </p>
+                    <div id="drinks" class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">4</span>&euro;</div>
+                    </div>
+                </div>
+
+                <h1 class="menu_titles" data-aos="fade">Drinks</h1>
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Ice_tea.jpg" alt="Picture of Ice tea">
+                    <h2 class="menu_item_name">Peach Ice Tea</h2>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Description:</span> A can of refreshing cold Ice tea.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">3</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item" data-aos="fade">
+                    <img class="menu_img_src" src="Images/CocaCola.png" alt="Picture of Coca-Cola">
+                    <h2 class="menu_item_name">Coca-Cola</h2>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Description:</span> A can of refreshing cold Coca-Cola.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">2</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item supplement" data-aos="fade">
+                    <img class="menu_img_src" src="Images/Schweppes.jpg" alt="Picture of Schweppes">
+                    <h2 class="menu_item_name">Schweppes</h2>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Description:</span> A can of refreshing cold Schweppes
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">2</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item supplement" data-aos="fade">
+                    <img class="menu_img_src" src="Images/fanta_can.jpg" alt="Picture of Fanta">
+                    <h2 class="menu_item_name">Fanta</h2>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Description:</span> A can of refreshing cold Fanta.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">2</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item supplement" data-aos="fade">
+                    <img class="menu_img_src" src="Images/MineralWater.jpg" alt="Picture of Mineral Water">
+                    <h2 class="menu_item_name">Mineral Water</h2>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Description:</span> A can of refreshing cold Mineral Water.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">1</span>&euro;</div>
+                    </div>
+                </div>
+
+                <div class="menu_item supplement" data-aos="fade">
+                    <img class="menu_img_src" src="Images/OrangeJuice.jpg" alt="Picture of Orange Juice">
+                    <h2 class="menu_item_name">Orange Juice</h2>
+                    <p class="menu_ingridients">
+                        <span class="dark_text">Description:</span> A can of refreshing cold Orange Juice.
+                    </p>
+                    <div class="menu_price">
+                        <button class="menu_add_to_cart">Add to Cart</button>
+                        <div><span class="dark_text">Price:</span> <span class="price">3</span>&euro;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollToTop" data-aos="fade"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <footer>
+        <section id="menu_footer">
+            <div>
+                <h3>Social Media:</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href="mailto:tonkoviclucija02@gmail.com"><i class="fa-solid fa-envelope"></i>p_eaters@gmail.com</a></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Location & Contact numbers:</h3>
+                <div class="footer_div">
+                    <i class="fa-solid fa-location-dot"></i>"Ul. Bul. Jane Sandanski number: 32"
+                </div>
+                <div class="footer_div">
+                    <i class="fa-solid fa-phone"></i>+389 71 346 195
+                </div>
+                <div class="footer_div">
+                    <i class="fa-solid fa-mobile-retro"></i>+389 02 2430 316
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright" id="menu_copyright">
+            <div>&copy;Lucija Tonković - August 2022</div>
+        </section>
+    </footer>
+
+    <section class="cart_popUp">
+        <div class="cart_details">
+            <div class="close">+</div>
+
+            <h1>Your Cart Items</h1>
+
+            <div class="cart_columns">
+                <div class="item_cartSection">Item</div>
+                <div class="price_cartSection">Price</div>
+                <div class="quantity_cartSection">Quantity</div>
+            </div>
+
+            <div id="cart_items">
+
+            </div>
+
+            <div class="total_price">Total Price: <span class="calc_total_price">0</span>&euro;</div>
+
+            <div class="purchase_container">
+                <button class="purchase">Purchase</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="order_address_popUp">
+        <div class="order_address_details">
+            <div class="order_close">+</div>
+            <div class="order_back_button"><i class="fa-solid fa-arrow-left"></i></div>
+            <h2 class="custom_title_img">
+                <img src="Images/Delivery_icon.png" alt="Motorcycle icon">
+                Destination details
+            </h2>
+            <div class="order_details_layout">
+                <p>
+                    Please enter a name for the recipient, a contact number, as well as the address you would like the
+                    items to be delivered to. You can also write special instructions if you want the items delivered
+                    at a specific time and date, or you can leave it blank for a prompt delivery.
+                </p>
+
+                <form id="order_address_form2">
+                    <input type="text" name="recipient_name" class="small_input purchase_input"
+                           placeholder="Recipient name and surname" required>
+                    <input type="tel" name="order_contact_number" class="small_input small_input_right purchase_input"
+                           placeholder="Contact number: 071/346-195" pattern="[0-9]{3}/[0-9]{3}-[0-9]{3}" required>
+                    <br>
+                    <input type="text" name="delivery_address" class="big_input purchase_input"
+                           placeholder="Address to deliver the items to" required>
+                    <textarea name="special_delivery_instructions" placeholder="Special instructions (optional)"
+                    class="big_input"></textarea>
+                </form>
+
+                <p>
+                    <span class="attention">Note:</span> Delivery usually takes from 30 minutes to an hour if more
+                    than 5 items aren't being ordered or a time and date hasn't been specified in the special
+                    instructions area. Payment is done in person by card or in cash.
+                </p>
+
+                <button type="submit" form="order_address_form2" class="finish_purchase">Done</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="customize_popUp">
+        <div id="customize_container">
+            <div id="close_customization">+</div>
+
+            <div id="pick_customization">
+                <h1>Choose a meal</h1>
+
+                <div id="customization_options">
+                    <div id="pick_pizza">
+                        <img src="Images/Pizza_icon.png" alt="Pizza Icon">
+                        <h2>Pizza</h2>
+                    </div>
+
+                    <div id="pick_burger">
+                        <img src="Images/Burger_icon.png" alt="Burger Icon">
+                        <h2>Burger</h2>
+                    </div>
+
+                    <div id="pick_pasta">
+                        <img src="Images/Pasta_icon.jpg" alt="Pasta Icon">
+                        <h2>Pasta</h2>
+                    </div>
+
+                    <div id="pick_pancake">
+                        <img src="Images/Pancake_icon.png" alt="Pancake Icon">
+                        <h2>Pancake/Waffle</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pizza_customization">
+                <div class="back_button"><i class="fa-solid fa-arrow-left"></i></div>
+
+                <h2>
+                    <div class="custom_title_img">
+                        <img src="Images/Pizza_icon.png" alt="Pizza Icon" id="custom_pizza_img">
+                        Your pizza
+                    </div>
+                    </br>
+                    <span class="price_explanation">
+                        Prices are displayed in the brackets next to the items
+                    </span>
+                </h2>
+
+                <form id="pizza_form">
+                    <div>
+                        <h3>Dough Size:</h3>
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="small_dough">Small (<span class="input_price">2</span>&euro;)</label>
+                                <input type="radio" name="dough_size" id="small_dough" checked>
+                            </div>
+
+                            <div>
+                                <label for="medium_dough">Medium (<span class="input_price">3</span>&euro;)</label>
+                                <input type="radio" name="dough_size" id="medium_dough">
+                            </div>
+
+                            <div>
+                                <label for="large_dough">Large (<span class="input_price">4</span>&euro;)</label>
+                                <input type="radio" name="dough_size" id="large_dough">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Type of crust:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="thin_crust">Thin crust (<span class="input_price">0</span>&euro;)</label>
+                                <input type="radio" name="crust_type" id="thin_crust" checked>
+                            </div>
+
+                            <div>
+                                <label for="thick_crust">Thick crust (<span class="input_price">0</span>&euro;)</label>
+                                <input type="radio" name="crust_type" id="thick_crust">
+                            </div>
+
+                            <div>
+                                <label for="stuffed_crust">Stuffed crust (<span class="input_price">2</span>&euro;)</label>
+                                <input type="radio" name="crust_type" id="stuffed_crust">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Type of cheese:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="mozzarella">Mozzarella (<span class="input_price">1</span>&euro;)</label>
+                                <input type="radio" name="cheese_type" id="mozzarella" checked>
+                            </div>
+
+                            <div>
+                                <label for="gouda">Gouda (<span class="input_price">2</span>&euro;)</label>
+                                <input type="radio" name="cheese_type" id="gouda">
+                            </div>
+
+                            <div>
+                                <label for="goat_cheese">Goat cheese (<span class="input_price">3</span>&euro;)</label>
+                                <input type="radio" name="cheese_type" id="goat_cheese">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Type of meat:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="ham">Ham (<span class="input_price">2</span>&euro;)</label>
+                                <input type="checkbox" name="meat_type" id="ham">
+                            </div>
+
+                            <div>
+                                <label for="prosciutto">Prosciutto (<span class="input_price">3</span>&euro;)</label>
+                                <input type="checkbox" name="meat_type" id="prosciutto">
+                            </div>
+
+                            <div>
+                                <label for="pepperoni">Pepperoni (<span class="input_price">2</span>&euro;)</label>
+                                <input type="checkbox" name="meat_type" id="pepperoni">
+                            </div>
+
+                            <div>
+                                <label for="tuna">Tuna (<span class="input_price">2</span>&euro;)</label>
+                                <input type="checkbox" name="meat_type" id="tuna">
+                            </div>
+
+                            <div>
+                                <label for="sausage">Hot Sausage (<span class="input_price">3</span>&euro;)</label>
+                                <input type="checkbox" name="meat_type" id="sausage">
+                            </div>
+
+                            <div>
+                                <label for="bacon">Bacon (<span class="input_price">3</span>&euro;)</label>
+                                <input type="checkbox" name="meat_type" id="bacon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Vegetables:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="peppers">Peppers (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables" id="peppers">
+                            </div>
+
+                            <div>
+                                <label for="onions">Onions (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables" id="onions">
+                            </div>
+
+                            <div>
+                                <label for="tomatoes">Tomatoes (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables" id="tomatoes">
+                            </div>
+
+                            <div>
+                                <label for="mushrooms">Mushrooms (<span class="input_price">2</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables" id="mushrooms">
+                            </div>
+
+                            <div>
+                                <label for="black_olives">Black Olives (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables" id="black_olives">
+                            </div>
+
+                            <div>
+                                <label for="green_olives">Green Olives (<span class="input_price">2</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables" id="green_olives">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="customization_buttons_and_price_section">
+                    <div class="customization_buttons">
+                        <button type="reset" id="pizza_reset">Reset</button>
+                        <button type="submit" id="pizza_add_to_cart">Add to Cart</button>
+                    </div>
+
+                    <div class="total_customization_price">
+                        Total price: <span id="cpizza_price">0</span>&euro;
+                    </div>
+                </div>
+            </div>
+
+            <div id="pasta_customization">
+                <div class="back_button"><i class="fa-solid fa-arrow-left"></i></div>
+
+                <h2>
+                    <div class="custom_title_img">
+                        <img src="Images/Pasta_icon.jpg" id="custom_pasta_img" alt="Pasta Icon">
+                        Your pasta
+                    </div>
+                    </br>
+                    <span class="price_explanation">
+                        Prices are displayed in the brackets next to the items in euros
+                    </span>
+                </h2>
+
+                <form id="pasta_form">
+                    <div>
+
+                        <h3>Pasta type:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="spaghetti">Spaghetti (<span class="input_price">2</span>&euro;)</label>
+                                <input type="radio" name="pasta_type" id="spaghetti" checked>
+                            </div>
+
+                            <div>
+                                <label for="macaroni">Macaroni (<span class="input_price">2</span>&euro;)</label>
+                                <input type="radio" name="pasta_type" id="macaroni">
+                            </div>
+
+                            <div>
+                                <label for="farfalle">Farfalle (<span class="input_price">3</span>&euro;)</label>
+                                <input type="radio" name="pasta_type" id="farfalle">
+                            </div>
+
+                            <div>
+                                <label for="ravioli">Ravioli (<span class="input_price">4</span>&euro;)</label>
+                                <input type="radio" name="pasta_type" id="ravioli">
+                            </div>
+
+                            <div>
+                                <label for="tortelli">Tortelli (<span class="input_price">4</span>&euro;)</label>
+                                <input type="radio" name="pasta_type" id="tortelli">
+                            </div>
+
+                            <div>
+                                <label for="gnocchi">Gnocchi (<span class="input_price">4</span>&euro;)</label>
+                                <input type="radio" name="pasta_type" id="gnocchi">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Sauce type:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="bolognese">Bolognese (<span class="input_price">3</span>&euro;)</label>
+                                <input type="radio" name="pasta_sauce_type" id="bolognese" checked>
+                            </div>
+
+                            <div>
+                                <label for="carbonara">Carbonara (<span class="input_price">4</span>&euro;)</label>
+                                <input type="radio" name="pasta_sauce_type" id="carbonara">
+                            </div>
+
+                            <div>
+                                <label for="pesto">Pesto (<span class="input_price">2</span>&euro;)</label>
+                                <input type="radio" name="pasta_sauce_type" id="pesto">
+                            </div>
+
+                            <div>
+                                <label for="al_tonno">Pasta al Tonno (<span class="input_price">3</span>&euro;)</label>
+                                <input type="radio" name="pasta_sauce_type" id="al_tonno">
+                            </div>
+
+                            <div>
+                                <label for="funghi_porcini">Funghi Porcini (<span class="input_price">4</span>&euro;)</label>
+                                <input type="radio" name="pasta_sauce_type" id="funghi_porcini">
+                            </div>
+
+                            <div>
+                                <label for="marinara">Marinara (<span class="input_price">4</span>&euro;)</label>
+                                <input type="radio" name="pasta_sauce_type" id="marinara">
+                            </div>
+
+                            <div>
+                                <label for="bechamel_chicken_mushrooms">Bechamel, mushrooms, chicken sauce (<span class="input_price">5</span>&euro;)</label>
+                                <input type="radio" name="pasta_sauce_type" id="bechamel_chicken_mushrooms">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Include in my pasta (no additional payment required):</h3>
+
+                        <div class="inputs_wrapper exception_inputs">
+                            <div>
+                                <label for="garlic">Garlic</label>
+                                <input type="checkbox" name="include_in_pasta" id="garlic">
+                            </div>
+
+                            <div>
+                                <label for="onions_pasta">Onions</label>
+                                <input type="checkbox" name="include_in_pasta" id="onions_pasta">
+                            </div>
+
+                            <div>
+                                <label for="pamegiano">Pamegiano</label>
+                                <input type="checkbox" name="include_in_pasta" id="pamegiano">
+                            </div>
+
+                            <div>
+                                <label for="parsley">Parsley</label>
+                                <input type="checkbox" name="include_in_pasta" id="parsley">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="customization_buttons_and_price_section">
+                    <div class="customization_buttons">
+                        <button type="reset" id="pasta_reset">Reset</button>
+                        <button type="submit" id="pasta_add_to_cart">Add to Cart</button>
+                    </div>
+
+                    <div class="total_customization_price">
+                        Total price: <span id="cpasta_price">0</span>&euro;
+                    </div>
+                </div>
+            </div>
+
+            <div id="burger_customization">
+                <div class="back_button"><i class="fa-solid fa-arrow-left"></i></div>
+
+                <h2>
+                    <div class="custom_title_img">
+                        <img src="Images/Burger_icon.png" id="custom_burger_img" alt="Burger Icon">
+                        Your burger
+                    </div>
+                    </br>
+                    <span class="price_explanation">
+                        Prices are displayed in the brackets next to the items in euros
+                    </span>
+                </h2>
+
+                <form id="burger_form">
+                    <div>
+                        <h3>Burger sauce:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="ketchup">Ketchup (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="burger_sauce" id="ketchup">
+                            </div>
+
+                            <div>
+                                <label for="mayonnaise">Mayonnaise (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="burger_sauce" id="mayonnaise">
+                            </div>
+
+                            <div>
+                                <label for="picky_sauce">Our homemade sauce (<span class="input_price">2</span>&euro;)</label>
+                                <input type="checkbox" name="burger_sauce" id="picky_sauce">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Type of patty:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="beef">Beef (<span class="input_price">0</span>&euro;)</label>
+                                <input type="radio" name="patty_type" id="beef" checked>
+                            </div>
+
+                            <div>
+                                <label for="chicken">Chicken (<span class="input_price">0</span>&euro;)</label>
+                                <input type="radio" name="patty_type" id="chicken">
+                            </div>
+
+                            <div>
+                                <label for="crispy_chicken">Crispy Chicken (<span class="input_price">1</span>&euro;)</label>
+                                <input type="radio" name="patty_type" id="crispy_chicken">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Type of cheese:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="cheddar">Cheddar (<span class="input_price">3</span>&euro;)</label>
+                                <input type="radio" name="burger_cheese" id="cheddar" checked>
+                            </div>
+
+                            <div>
+                                <label for="vegan_cheese">Vegan Cheese (<span class="input_price">2</span>&euro;)</label>
+                                <input type="radio" name="burger_cheese" id="vegan_cheese">
+                            </div>
+
+                            <div>
+                                <label for="Classic">Classic (<span class="input_price">1</span>&euro;)</label>
+                                <input type="radio" name="burger_cheese" id="classic">
+                            </div>
+
+                            <div>
+                                <label for="none">None (<span class="input_price">0</span>&euro;)</label>
+                                <input type="radio" name="burger_cheese" id="none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Vegetables:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="tomatoes_in_burger">Tomatoes (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables_in_burger" id="tomatoes_in_burger">
+                            </div>
+
+                            <div>
+                                <label for="lettuce">Lettuce (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables_in_burger" id="Lettuce">
+                            </div>
+
+                            <div>
+                                <label for="pickles">Pickles (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables_in_burger" id="pickles">
+                            </div>
+
+                            <div>
+                                <label for="cucumbers">Cucumbers (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables_in_burger" id="cucumbers">
+                            </div>
+
+                            <div>
+                                <label for="onions_in_burger">Onions (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="vegetables_in_burger" id="onions_in_burger">
+                            </div>
+
+                            <div>
+                                <label for="caramelized_onions">Caramelized Onions (<span class="input_price">2</span>)</label>
+                                <input type="checkbox" name="vegetables_in_burger" id="caramelized_onions">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 id="burger_patty_number">Number of patties</br>(2&euro; for each):</h3>
+
+                        <input type="number" name="patty_number" value="1" min="1" max="3" class="number_input">
+                    </div>
+                </form>
+
+                <div class="customization_buttons_and_price_section">
+                    <div class="customization_buttons">
+                        <button type="reset" id="burger_reset">Reset</button>
+                        <button type="submit" id="burger_add_to_cart">Add to Cart</button>
+                    </div>
+
+                    <div class="total_customization_price">
+                        Total price: <span id="cburger_price">0</span>&euro;
+                    </div>
+                </div>
+            </div>
+
+            <div id="pancake_customization">
+                <div class="back_button"><i class="fa-solid fa-arrow-left"></i></div>
+
+                <h2>
+                    <div class="custom_title_img">
+                        <img src="Images/Pancake_icon.png" id="custom_pancake_img" alt="Pancake Icon">
+                        Your pancake/waffle
+                    </div>
+                    </br>
+                    <span class="price_explanation">
+                        Prices are displayed in the brackets next to the items in euros
+                    </span>
+                </h2>
+
+                <form id="pancake_form">
+                    <div>
+                        <h3>Pancakes or waffles?</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="pancake">Pancakes (<span class="input_price">0</span>&euro;)</label>
+                                <input type="radio" name="pancake_or_waffle" id="pancake" checked>
+                            </div>
+
+                            <div>
+                                <label for="waffle">Waffles (<span class="input_price">1</span>&euro;)</label>
+                                <input type="radio" name="pancake_or_waffle" id="waffle">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Number of pancakes/waffles</br>(2&euro; each):</h3>
+
+                        <input type="number" name="pancake_number" value="1" min="1" max="4" class="number_input">
+                    </div>
+
+                    <div>
+                        <h3>Type of filling:</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="nutella">Nutella (<span class="input_price">4</span>&euro;)</label>
+                                <input type="checkbox" name="pancake_filling" id="nutella">
+                            </div>
+
+                            <div>
+                                <label for="white_chocolate_cream">White Chocolate cream (
+                                    <span class="input_price">2</span>&euro;)</label>
+                                <input type="checkbox" name="pancake_filling" id="white_chocolate_cream">
+                            </div>
+
+                            <div>
+                                <label for="peanut_butter">Peanut Butter (<span class="input_price">2</span>&euro;)</label>
+                                <input type="checkbox" name="pancake_filling" id="peanut_butter">
+                            </div>
+
+                            <div>
+                                <label for="strawberry_jam">Strawberry jam (<span class="input_price">3</span>&euro;)</label>
+                                <input type="checkbox" name="pancake_filling" id="strawberry_jam">
+                            </div>
+
+                            <div>
+                                <label for="cherry_jam">Cherry jam (<span class="input_price">3</span>&euro;)</label>
+                                <input type="checkbox" name="pancake_filling" id="cherry_jam">
+                            </div>
+
+                            <div>
+                                <label for="apricot_jam">Apricot jam (<span class="input_price">3</span>&euro;)</label>
+                                <input type="checkbox" name="pancake_filling" id="apricot_jam">
+                            </div>
+
+                            <div>
+                                <label for="maple_syrup">Maple Syrup (<span class="input_price">2</span>&euro;)</label>
+                                <input type="checkbox" name="pancake_filling" id="maple_syrup">
+                            </div>
+
+                            <div>
+                                <label for="berry_syrup">Berry Syrup (<span class="input_price">3</span>&euro;)</label>
+                                <input type="checkbox" name="pancake_filling" id="berry_syrup">
+                            </div>
+
+                            <div>
+                                <label for="whipped_cream">Whipped Cream (<span class="input_price">1</span>&euro;)</label>
+                                <input type="checkbox" name="pancake_filling" id="whipped_cream">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Fruits (one payment of 3&euro;):</h3>
+
+                        <div class="inputs_wrapper">
+                            <div>
+                                <label for="strawberries">Strawberries</label>
+                                <input type="checkbox" name="fruits" id="strawberries">
+                            </div>
+
+                            <div>
+                                <label for="cherries">Cherries</label>
+                                <input type="checkbox" name="fruits" id="cherries">
+                            </div>
+
+                            <div>
+                                <label for="bananas">Bananas</label>
+                                <input type="checkbox" name="fruits" id="bananas">
+                            </div>
+
+                            <div>
+                                <label for="apples">Apples</label>
+                                <input type="checkbox" name="fruits" id="apples">
+                            </div>
+
+                            <div>
+                                <label for="pears">Pears</label>
+                                <input type="checkbox" name="fruits" id="pears">
+                            </div>
+
+                            <div>
+                                <label for="pineapples">Pineapples</label>
+                                <input type="checkbox" name="fruits" id="pineapples">
+                            </div>
+
+                            <div>
+                                <label for="mangoes">Mangoes</label>
+                                <input type="checkbox" name="fruits" id="mangoes">
+                            </div>
+
+                            <div>
+                                <label for="kiwi">Kiwi</label>
+                                <input type="checkbox" name="fruits" id="kiwi">
+                            </div>
+
+                            <div>
+                                <label for="raspberries">Raspberries</label>
+                                <input type="checkbox" name="fruits" id="raspberries">
+                            </div>
+
+                            <div>
+                                <label for="blackberries">Blackberries</label>
+                                <input type="checkbox" name="fruits" id="blackberries">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="customization_buttons_and_price_section">
+                    <div class="customization_buttons">
+                        <button type="reset" id="pancake_reset">Reset</button>
+                        <button type="submit" id="pancake_add_to_cart">Add to Cart</button>
+                    </div>
+
+                    <div class="total_customization_price">
+                        Total price: <span id="cpancake_price">0</span>&euro;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const btnScrollToTop = document.querySelector("#scrollToTop");
+
+        btnScrollToTop.addEventListener("click", function(){
+            //window.scrollTo(0,0);
+
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            })
+        })
+    </script>
+
+    <script src="JavaScript/Menu.js"></script>
+    <script src="JavaScript/Main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in'
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picky Eaters - Home</title>
+
+    <meta name="description" content="Food Ordering Application">
+    <meta name="keywords" content="Food, Order, Picky, Customizable, About, Delivery">
+    <meta name="author" content="Lucija Tonkovikj">
+
+    <link rel="stylesheet" href="Styles/Main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com\e2c403c841.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="placeholder"></div>
+    <div class="items_in_cart_indicator"></div>
+    <span class="logo_background"><img src="Images/Final_logo.png" alt="Panda Logo" class="logo"></span>
+    <nav class="navMenu">
+        <span>Logo</span>
+        <span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </span>
+        <span class="cart_icon"><i class="fa-solid fa-cart-shopping"></i></span>
+    </nav>
+
+    <div class="content">
+        <section id="slider_section" class="swiper mySwiper" data-aos="fade">
+
+            <div class="swiper-wrapper">
+                <div class="special_dish swiper-slide">
+                    <div>
+                        <h1>This week's special</h1>
+
+                        <h2 class="special_item_name">Butter Chicken</h2>
+
+                        <p> An Indian dish, made with aromatic golden chicken pieces in a delicious curry sauce.
+                            The sauce is made with spiced tomato and butter and it's now for its texture.
+                        </p>
+
+                        <span><span class="turquoise_text">Price:</span> <span class="price">13</span>&euro;</span>
+
+                        <button class="specialAddToCart">Add to cart</button>
+                    </div>
+
+                    <img class="special_item_img" src="Images/Butter_Chicken.jpg" alt="Picture of Butter Chicken">
+                </div>
+
+                <div class="special_dish swiper-slide">
+                    <div>
+                        <h1>This week's special</h1>
+
+                        <h2 class="special_item_name">Gyro</h2>
+
+                        <p>
+                            A Greek dish consisted of meat cooked on a rotisserie, wrapped in a pita bread,
+                            along with tomatoes, onions, fries and tzatziki.
+                        </p>
+
+                        <span ><span class="turquoise_text">Price:</span> <span class="price">7</span>&euro;</span>
+
+                        <button class="specialAddToCart">Add to cart</button>
+                    </div>
+
+                    <img class="special_item_img" src="Images/Gyro.jpg" alt="Picture of Gyro">
+                </div>
+
+                <div class="special_dish swiper-slide">
+                    <div>
+                        <h1>This week's special</h1>
+
+                        <h2 class="special_item_name">Lemon & Blackberry Cake</h2>
+
+                        <p>
+                            A dessert that is an example of a perfect combination of sweet and sour. It is a refreshing
+                            and light choice for the summer period.
+                        </p>
+
+                        <span><span class="turquoise_text">Price:</span> <span class="price">5</span>&euro;</span>
+
+                        <button class="specialAddToCart">Add to cart</button>
+                    </div>
+
+                    <img class="special_item_img" src="Images/Lemon_Blackberry_Cake.jpg"
+                         alt="Picture of Lemon and Blackberry cake">
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <section id="aboutUs" data-aos="fade-in">
+            <div id="aboutUs_wrapper">
+                <div>
+                    <div class="restaurant_description">
+                        <div id="description_width">
+                            <div class="flex_center">
+                                <h2>About Us:</h2>
+                            </div>
+                            <p>
+                                Picky Eaters is an affordable restaurant that offers a variety of dishes, including
+                                pizza, salads, pasta, burgers, seafood and desserts. We also offer 3 different special
+                                meals that change every week and can be found on the top of our home page. Customers
+                                can also order supplements, such as fries or a drink, which are placed at the bottom of
+                                our menu section. We additionally offer an option to customize your own meal for some
+                                dishes, which gives you full control to pick what is in your food. There is both an
+                                option to order our food online, or simply visit our restaurant which is located as
+                                shown on the map below.
+                            </p>
+                        </div>
+                        <img src="Images/Restaurant_try1.jpg">
+                    </div>
+                    <div class="restaurant_description">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.6777
+                        046829784!2d21.461681215413975!3d41.98572906665098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                        1s0x135415ddb4142397%3A0xb31ddfe22f293b0a!2sBoulevard%20Jane%20Sandanski%2032%2C%20Skopje%201000!5e
+                        0!3m2!1sen!2smk!4v1660644362498!5m2!1sen!2smk" width="550rem" height="350rem" style="border:0;"
+                                allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div>
+                            <div class="flex_center">
+                                <h2>Why choose us?</h2>
+                            </div>
+                            <div id="grid_icons">
+                                <div><i class="fa-solid fa-truck"></i>Fast Delivery</div>
+                                <div><i class="fa-solid fa-piggy-bank"></i>Free Delivery</div>
+                                <div><i class="fa-solid fa-hourglass"></i>Open 24/7</div>
+                                <div><i class="fa-solid fa-champagne-glasses"></i>Great Atmosphere</div>
+                                <div><i class="fa-solid fa-cookie-bite"></i>Tasty Food</div>
+                                <div><i class="fa-solid fa-kitchen-set"></i>Customize Meal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="swiper-container" data-aos="fade-in">
+            <h2>Reviews of our restaurant and food:</h2>
+            <div class="reviews_wrapper swiper-wrapper">
+                <div class="review_card swiper-slide">
+                    <div class="rating_center">
+                        <img src="Images/Person1.jpeg" alt="Picture of reviewer">
+                        <div class="name_rating">
+                            <h2>Isabella Jamison</h2>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        “Walked in for dinner in a Wednesday night and sat at the bar. The bartender, Erin, couldn’t
+                        have been nicer. She was quick, efficient and friendly. She helped recommend something for my
+                        dinner and the Seafood Risotto didn’t disappoint!"
+                    </p>
+                </div>
+
+                <div class="review_card swiper-slide">
+                    <div class="rating_center">
+                        <img src="Images/Person2.jpg" alt="Picture of reviewer">
+                        <div class="name_rating">
+                            <h2>Sophia Carter</h2>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        My husband and I had our Anniversary dinner at the Fairway last night. We sat outside on the
+                        terrace which was very pretty and private. Our waitress was wonderful and the food was
+                        absolutely delicious!! It could not have been more spectacular! We would highly recommend it
+                        to everyone!!"
+                    </p>
+                </div>
+
+                <div class="review_card swiper-slide">
+                    <div class="rating_center">
+                        <img src="Images/Person3.jpg" alt="Picture of reviewer">
+                        <div class="name_rating">
+                            <h2>William McKale</h2>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        “Great pizza and brunch as well. We had a big party for my birthday brunch and our waitress
+                        Maddie was so nice and awesome even with our big loud table of 11 people. I had some pancakes
+                        which were great. Definitely recommend their cheese pizza too, really good sauce and crust.”
+                    </p>
+                </div>
+
+                <div class="review_card swiper-slide">
+                    <div class="rating_center">
+                        <img src="Images/Person4.jpg" alt="Picture of reviewer">
+                        <div class="name_rating">
+                            <h2>Alexander Parker</h2>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        “The food was excellent and so was the service.  I had the mushroom risotto that was awesome.
+                        My wife had a burger and a salad which were also very good. The restaurant has a vey nice
+                        ambiance and a cozy bar.”
+                    </p>
+                </div>
+
+                <div class="review_card swiper-slide">
+                    <div class="rating_center">
+                        <img src="Images/Person5.jpg" alt="Picture of reviewer">
+                        <div class="name_rating">
+                            <h2>Olivia Addison</h2>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        This place knows how to satisfy their clients. Always with a super nice mindset. The food is
+                        affordably priced and always delicious. The whole restaurant, as well as the tables, are
+                        spotless and the atmosphere is relaxing.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+        </section>
+    </div>
+
+    <footer data-aos="fade-in" data-aos-duration="500">
+        <section>
+            <div>
+                <h3>Social Media:</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href="mailto:tonkoviclucija02@gmail.com"><i class="fa-solid fa-envelope"></i>p_eaters@gmail.com</a></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Location & Number:</h3>
+                <div class="footer_div">
+                    <i class="fa-solid fa-location-dot"></i>"Ul. Bul. Jane Sandanski number: 32"
+                </div>
+                <div class="footer_div">
+                    <i class="fa-solid fa-phone"></i>+389 71 346 195
+                </div>
+                <div class="footer_div">
+                    <i class="fa-solid fa-mobile-retro"></i>+389 02 2430 316
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright">
+            <div>&copy;Lucija Tonković - August 2022</div>
+        </section>
+    </footer>
+
+    <section class="cart_popUp">
+        <div class="cart_details">
+            <div class="close">+</div>
+
+            <h1>Your Cart Items</h1>
+
+            <div class="cart_columns">
+                <div class="item_cartSection">Item</div>
+                <div class="price_cartSection">Price</div>
+                <div class="quantity_cartSection">Quantity</div>
+            </div>
+
+            <div id="cart_items">
+
+            </div>
+
+            <div class="total_price">Total Price: <span class="calc_total_price">0</span>&euro;</div>
+
+            <div class="purchase_container">
+                <button class="purchase">Purchase</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="order_address_popUp">
+        <div class="order_address_details">
+            <div class="order_close">+</div>
+            <div class="order_back_button"><i class="fa-solid fa-arrow-left"></i></div>
+            <h2 class="custom_title_img">
+                <img src="Images/Delivery_icon.png" alt="Motorcycle icon">
+                Destination details
+            </h2>
+            <div class="order_details_layout">
+                <p>
+                    Please enter a name for the recipient, a contact number, as well as the address you would like the
+                    items to be delivered to. You can also write special instructions if you want the items delivered
+                    at a specific time and date, or you can leave it blank for a prompt delivery.
+                </p>
+
+                <form id="order_address_form1">
+                    <input type="text" name="recipient_name" class="small_input purchase_input"
+                           placeholder="Recipient name and surname" required>
+                    <input type="tel" name="order_contact_number" class="small_input small_input_right purchase_input"
+                           placeholder="Contact number: 071/346-195" pattern="[0-9]{3}/[0-9]{3}-[0-9]{3}" required>
+                    <br>
+                    <input type="text" name="delivery_address" class="big_input purchase_input"
+                           placeholder="Address to deliver the items to" required>
+                    <textarea name="special_delivery_instructions" placeholder="Special instructions (optional)"
+                              class="big_input"></textarea>
+                </form>
+
+                <p>
+                    <span class="attention">Note:</span> Delivery usually takes from 30 minutes to an hour if more
+                    than 5 items aren't being ordered or a time and date hasn't been specified in the special
+                    instructions area. Payment is done in person by card or in cash.
+                </p>
+
+                <button type="submit" form="order_address_form1" class="finish_purchase">Done</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="JavaScript/Home.js"></script>
+    <script src="JavaScript/Main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in'
+        });
+    </script>
+
+</body>
+
+</html>

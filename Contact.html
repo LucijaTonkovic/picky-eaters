@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picky Eaters - Menu</title>
+    <meta name="description" content="Food Ordering Application">
+    <meta name="keywords" content="Food, Order, Picky, Customizable, About, Delivery, Contact">
+    <meta name="author" content="Lucija Tonkovikj">
+
+    <link rel="stylesheet" href="Styles/Main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com\e2c403c841.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="placeholder"></div>
+    <div class="items_in_cart_indicator"></div>
+    <span class="logo_background"><img src="Images/Final_logo.png" alt="Panda Logo" class="logo"></span>
+    <nav class="navMenu">
+        <span>Logo</span>
+        <span>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </span>
+        <span class="cart_icon"><i class="fa-solid fa-cart-shopping"></i></span>
+    </nav>
+
+    <div id="contacts_heading" data-aos="fade-in">
+        <h1>Contact Form</h1>
+        <h2>Want to make a quick reservation or ask a question?</h2>
+    </div>
+
+    <fieldset data-aos="fade-in">
+        <form id="reservation_form">
+            <img src="Images/Reservation.jpg">
+
+            <div>
+
+                <div class="form_section">
+                    <input type="text" name="Name" placeholder="Name" required>
+
+                    <input type="text" name="Surname" placeholder="Surname" required>
+                </div>
+
+                <div class="form_section">
+                    <input type="tel" name="PhoneNumber" placeholder="Number :  071/346-195"
+                           pattern="[0-9]{3}/[0-9]{3}-[0-9]{3}" required>
+
+                    <input type="email" name="Email" placeholder="Email" required>
+                </div>
+
+                <textarea name="Question/Reservation" placeholder="My question/reservation..." required></textarea>
+
+                <input id="form_button" type="submit" name="Send" value="Send">
+            </div>
+        </form>
+    </fieldset>
+
+    <footer data-aos="fade-in" data-aos-duration="500">
+        <section>
+            <div>
+                <h3>Social Media:</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href="mailto:tonkoviclucija02@gmail.com"><i class="fa-solid fa-envelope"></i>p_eaters@gmail.com</a></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Location & Contact numbers:</h3>
+                <div class="footer_div">
+                    <i class="fa-solid fa-location-dot"></i>"Ul. Bul. Jane Sandanski number: 32"
+                </div>
+                <div class="footer_div">
+                    <i class="fa-solid fa-phone"></i>+389 71 346 195
+                </div>
+                <div class="footer_div">
+                    <i class="fa-solid fa-mobile-retro"></i>+389 02 2430 316
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright">
+            <div>&copy;Lucija Tonković - August 2022</div>
+        </section>
+    </footer>
+
+    <section class="cart_popUp">
+        <div class="cart_details">
+            <div class="close">+</div>
+
+            <h1>Your Cart Items</h1>
+
+            <div class="cart_columns">
+                <div class="item_cartSection">Item</div>
+                <div class="price_cartSection">Price</div>
+                <div class="quantity_cartSection">Quantity</div>
+            </div>
+
+            <div id="cart_items">
+
+            </div>
+
+            <div class="total_price">Total Price: <span class="calc_total_price">0</span>&euro;</div>
+
+            <div class="purchase_container">
+                <button class="purchase">Purchase</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="order_address_popUp">
+        <div class="order_address_details">
+            <div class="order_close">+</div>
+            <div class="order_back_button"><i class="fa-solid fa-arrow-left"></i></div>
+            <h2 class="custom_title_img">
+                <img src="Images/Delivery_icon.png" alt="Motorcycle icon">
+                Destination details
+            </h2>
+            <div class="order_details_layout">
+                <p>
+                    Please enter a name for the recipient, a contact number, as well as the address you would like the
+                    items to be delivered to. You can also write special instructions if you want the items delivered
+                    at a specific time and date, or you can leave it blank for a prompt delivery.
+                </p>
+
+                <form id="order_address_form3">
+                    <input type="text" name="recipient_name" class="small_input purchase_input"
+                           placeholder="Recipient name and surname" required>
+                    <input type="tel" name="order_contact_number" class="small_input small_input_right purchase_input"
+                           placeholder="Contact number: 071/346-195" pattern="[0-9]{3}/[0-9]{3}-[0-9]{3}" required>
+                    <br>
+                    <input type="text" name="delivery_address" class="big_input purchase_input"
+                           placeholder="Address to deliver the items to" required>
+                    <textarea name="special_delivery_instructions" placeholder="Special instructions (optional)"
+                              class="big_input"></textarea>
+                </form>
+
+                <p>
+                    <span class="attention">Note:</span> Delivery usually takes from 30 minutes to an hour if more
+                    than 5 items aren't being ordered or a time and date hasn't been specified in the special
+                    instructions area. Payment is done in person by card or in cash.
+                </p>
+
+                <button type="submit" form="order_address_form3" class="finish_purchase">Done</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="JavaScript/Main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1400,
+            easing: 'ease-in'
+        });
+    </script>
+
+</body>
+</html>
