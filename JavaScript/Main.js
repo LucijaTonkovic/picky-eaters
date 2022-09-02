@@ -214,18 +214,48 @@ function purchaseItems(event){
     check_for_indicator();*/
 }
 
-var order_details_done_buttons = document.getElementsByClassName('finish_purchase');
+var form1 = document.getElementById('order_address_form1');
+var form2 = document.getElementById('order_address_form2');
+var form3 = document.getElementById('order_address_form3');
 
-document.getElementById('order_address_form2').addEventListener('submit', function (e){
-    console.log('Ádded');
-    e.preventDefault(); //stop form from submitting.
-    var price_for_purchase = document.getElementsByClassName('calc_total_price')[0].innerText;
-    alert("Thank you for your purchase of " + price_for_purchase + "€!");
-    clear_cart();
-    localStorage.clear();
-    check_for_indicator();
-    document.getElementById('order_address_form2').submit();
-})
+if(form1 != null){
+    document.getElementById('order_address_form1').addEventListener('submit', function (e){
+        console.log('Ádded');
+        e.preventDefault(); //stop form from submitting.
+        var price_for_purchase = document.getElementsByClassName('calc_total_price')[0].innerText;
+        alert("Thank you for your purchase of " + price_for_purchase + "€!");
+        clear_cart();
+        localStorage.clear();
+        check_for_indicator();
+        document.getElementById('order_address_form1').submit();
+    })
+}
+
+if(form2 != null){
+    document.getElementById('order_address_form2').addEventListener('submit', function (e){
+        console.log('Ádded');
+        e.preventDefault(); //stop form from submitting.
+        var price_for_purchase = document.getElementsByClassName('calc_total_price')[0].innerText;
+        alert("Thank you for your purchase of " + price_for_purchase + "€!");
+        clear_cart();
+        localStorage.clear();
+        check_for_indicator();
+        document.getElementById('order_address_form2').submit();
+    })
+}
+
+if(form3 != null){
+    document.getElementById('order_address_form3').addEventListener('submit', function (e){
+        console.log('Ádded');
+        e.preventDefault(); //stop form from submitting.
+        var price_for_purchase = document.getElementsByClassName('calc_total_price')[0].innerText;
+        alert("Thank you for your purchase of " + price_for_purchase + "€!");
+        clear_cart();
+        localStorage.clear();
+        check_for_indicator();
+        document.getElementById('order_address_form3').submit();
+    })
+}
 
 /*for(let i = 0; i < order_details_done_buttons.length; i++){
     console.log('Ádded');
